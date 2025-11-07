@@ -7,7 +7,9 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Random;
 
-public class FileGeneratorService {
+public final class FileGeneratorService {
+  private FileGeneratorService() {}
+
   private static final String[] DEFAULT_FILE_NAMES = {
           "accountsAndAmounts", "paymentRegister", "financialTransferSheet",
           "transferAndBalances", "paymentAccountsSummary", "transferAccountsRegistry2025",
