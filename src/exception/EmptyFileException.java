@@ -9,6 +9,6 @@ public class EmptyFileException extends RuntimeException {
 
   @Override
   public String getMessage() {
-    return "Файл " + fileName + " не содержит данных для осуществления операций перевода.";
+    return "File " + fileName + " does not contain data for performing transfer operations.";
   }
 }

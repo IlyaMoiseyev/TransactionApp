@@ -12,11 +12,11 @@ public class WrongAmountException extends RuntimeException {
   @Override
   public String getMessage() {
     if (transferAmount < 0) {
-      return "Отрицательная сумма перевода!";
+      return "Negative transfer amount!";
     } else if (transferAmount > balance) {
-      return "Сумма перевода превышает баланс счета!";
+      return "Transfer amount exceeds the account balance!";
     } else {
-      return "Ошибка с суммой перевода";
+      return "Error with the transfer amount";
     }
   }
 }
