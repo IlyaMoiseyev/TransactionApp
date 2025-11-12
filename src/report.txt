@@ -1,17 +1,17 @@
-2025-06-01 20:59:31.267 clientTransferAccountsSummary.txt перевод со счета: 40739-18930, на счет: 90610-93453, сумма перевода: 8013.21 | успешно!
-2025-06-14 20:59:31.267 clientAccounts.txt перевод со счета: 34611-42184, на счет: 57295-32333, сумма перевода: 7160.21 | ошибка! | Сумма перевода превышает баланс счета!
-2025-08-11 20:59:31.267 accountListWithBalances.txt перевод со счета: 14315-58676, на счет: 49919-46083, сумма перевода: 1839.79 | ошибка! | Сумма перевода превышает баланс счета!
-2025-08-12 20:59:31.280 clientTransferAccountsSummary.txt перевод со счета: 28152-11788, на счет: 40859-44112, сумма перевода: 792.16 | успешно!
-2025-08-17 20:59:31.280 accountListWithBalances.txt перевод со счета: 49491-87964, на счет: 64538-94671, сумма перевода: 4658.18 | ошибка! | Сумма перевода превышает баланс счета!
-2025-08-19 20:59:31.281 clientTransferAccountsSummary.txt перевод со счета: 49884-72398, на счет: 55802-66310, сумма перевода: 9933.4 | ошибка! | Сумма перевода превышает баланс счета!
-2025-09-16 20:59:31.281 accountListWithBalances.txt перевод со счета: 60779-12908, на счет: 41306-35350, сумма перевода: 1417.17 | ошибка! | Сумма перевода превышает баланс счета!
-2025-09-28 20:59:31.282 clientTransferAccountsSummary.txt перевод со счета: 35409-13255, на счет: 28246-89216, сумма перевода: 2925.52 | успешно!
-2025-09-29 20:59:31.282 accountListWithBalances.txt перевод со счета: 12667-20760, на счет: 89460-52041, сумма перевода: 9558.35 | ошибка! | Сумма перевода превышает баланс счета!
-2025-10-02 20:59:31.283 clientTransferAccountsSummary.txt перевод со счета: 36315-42255, на счет: 98591-81013, сумма перевода: 3189.93 | успешно!
-2025-10-06 20:59:31.283 accountListWithBalances.txt перевод со счета: 86953-44737, на счет: 52971-52453, сумма перевода: 3039.49 | успешно!
-2025-10-08 20:59:31.284 clientTransferAccountsSummary.txt перевод со счета: 97438-10776, на счет: 91691-65560, сумма перевода: 1241.96 | успешно!
-2025-10-15 20:59:31.284 accountListWithBalances.txt перевод со счета: 75166-92114, на счет: 23611-12627, сумма перевода: 3973.99 | ошибка! | Сумма перевода превышает баланс счета!
-2025-11-01 20:59:31.285 accountListWithBalances.txt перевод со счета: 15080-78475, на счет: 57166-89000, сумма перевода: 7873.2 | успешно!
-2025-11-02 20:59:31.285 clientTransferAccountsSummary.txt перевод со счета: 26075-10412, на счет: 82719-42492, сумма перевода: 4044.54 | успешно!
-2025-11-03 20:59:31.286 clientTransferAccountsSummary.txt перевод со счета: 18868-63115, на счет: 46703-30017, сумма перевода: 3379.94 | ошибка! | Сумма перевода превышает баланс счета!
-2025-11-06 20:59:31.287 clientTransferAccountsSummary.txt перевод со счета: 27588-52997, на счет: 65824-82030, сумма перевода: 9936.91 | ошибка! | Сумма перевода превышает баланс счета!
+2025-06-01 22:40:27.239 accountListWithBalances.txt transfer from an account: 14315-58676, to the account: 49919-46083, transfer amount: 1839.79 | success!
+2025-06-14 22:40:27.239 clientAccounts.txt transfer from an account: 34611-42184, to the account: 57295-32333, transfer amount: 7160.21 | fault! | Transfer amount exceeds the account balance!
+2025-08-11 22:40:27.239 clientTransferAccountsSummary.txt transfer from an account: 40739-18930, to the account: 90610-93453, transfer amount: 8013.21 | fault! | Transfer amount exceeds the account balance!
+2025-08-12 22:40:27.278 clientTransferAccountsSummary.txt transfer from an account: 28152-11788, to the account: 40859-44112, transfer amount: 792.16 | success!
+2025-08-17 22:40:27.278 accountListWithBalances.txt transfer from an account: 49491-87964, to the account: 64538-94671, transfer amount: 4658.18 | fault! | Transfer amount exceeds the account balance!
+2025-08-19 22:40:27.289 accountListWithBalances.txt transfer from an account: 60779-12908, to the account: 41306-35350, transfer amount: 1417.17 | success!
+2025-09-16 22:40:27.289 clientTransferAccountsSummary.txt transfer from an account: 49884-72398, to the account: 55802-66310, transfer amount: 9933.4 | fault! | Transfer amount exceeds the account balance!
+2025-09-28 22:40:27.290 clientTransferAccountsSummary.txt transfer from an account: 35409-13255, to the account: 28246-89216, transfer amount: 2925.52 | success!
+2025-09-29 22:40:27.290 accountListWithBalances.txt transfer from an account: 12667-20760, to the account: 89460-52041, transfer amount: 9558.35 | fault! | Transfer amount exceeds the account balance!
+2025-10-02 22:40:27.291 clientTransferAccountsSummary.txt transfer from an account: 36315-42255, to the account: 98591-81013, transfer amount: 3189.93 | success!
+2025-10-06 22:40:27.291 accountListWithBalances.txt transfer from an account: 86953-44737, to the account: 52971-52453, transfer amount: 3039.49 | success!
+2025-10-08 22:40:27.292 accountListWithBalances.txt transfer from an account: 75166-92114, to the account: 23611-12627, transfer amount: 3973.99 | success!
+2025-10-15 22:40:27.292 clientTransferAccountsSummary.txt transfer from an account: 97438-10776, to the account: 91691-65560, transfer amount: 1241.96 | success!
+2025-11-01 22:40:27.293 clientTransferAccountsSummary.txt transfer from an account: 26075-10412, to the account: 82719-42492, transfer amount: 4044.54 | fault! | Transfer amount exceeds the account balance!
+2025-11-03 22:40:27.293 accountListWithBalances.txt transfer from an account: 15080-78475, to the account: 57166-89000, transfer amount: 7873.2 | fault! | Transfer amount exceeds the account balance!
+2025-11-08 22:40:27.294 clientTransferAccountsSummary.txt transfer from an account: 18868-63115, to the account: 46703-30017, transfer amount: 3379.94 | fault! | Transfer amount exceeds the account balance!
+2025-11-10 22:40:27.295 clientTransferAccountsSummary.txt transfer from an account: 27588-52997, to the account: 65824-82030, transfer amount: 9936.91 | fault! | Transfer amount exceeds the account balance!
