@@ -11,13 +11,10 @@ import java.io.IOException;
 public final class FileReaderService {
   private FileReaderService(){}
 
-  private static final String PATH_TO_REPORT_FILE = "src\\report.txt";
-  private static final String PATH_TO_SEARCH_DIRECTORY = "src\\input\\";
-
   public static void launchReadFileService() {
     try {
-      startProcessingTheFiles(findSuitableFiles((PATH_TO_SEARCH_DIRECTORY)));
-      System.out.println("Парсинг файлов завершен!");
+      startProcessingTheFiles(findSuitableFiles((PathsStorageService.PATH_TO_INPUT_DIRECTORY)));
+      System.out.println("File parsing is complete!");
     } catch (NoMatchingFilesException ex) {
       System.err.println(ex.getMessage());
     }
@@ -63,7 +60,7 @@ public final class FileReaderService {
   }
 
   public static void printingReportFileContent() throws NoMatchingFilesException {
-    File reportFile = new File(PATH_TO_REPORT_FILE);
+    File reportFile = new File(PathsStorageService.PATH_TO_REPORT_FILE);
 
     if (reportFile.exists()) {
       StringBuilder textFromTheReportFile = readTheFile(reportFile);
