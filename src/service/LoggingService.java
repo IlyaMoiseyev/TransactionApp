@@ -33,17 +33,17 @@ public class LoggingService {
                                double transferAmount,
                                boolean operationSuccess,
                                String exception) {
-    try (BufferedWriter writer = new BufferedWriter(new FileWriter("src\\report.txt", true))) {
-      String resultOperation = "ошибка!";
+    try (BufferedWriter writer = new BufferedWriter(new FileWriter(PathsStorageService.PATH_TO_REPORT_FILE, true))) {
+      String resultOperation = "fault!";
 
       if (operationSuccess) {
-        resultOperation = "успешно!";
+        resultOperation = "success!";
       }
       writer.write(date + " " + time + " "
               + fileName
-              + " перевод со счета: "
-              + debitingAccountNumber + ", на счет: "
-              + creditingAccountNumber + ", сумма перевода: "
+              + " transfer from an account: "
+              + debitingAccountNumber + ", to the account: "
+              + creditingAccountNumber + ", transfer amount: "
               + transferAmount + " | "
               + resultOperation);
 
