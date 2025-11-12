@@ -56,13 +56,13 @@ public final class FileGeneratorService {
   public static String getRandomFileName() {
     int counter = DEFAULT_FILE_NAMES.length;
     int randomIndex = new Random().nextInt(DEFAULT_FILE_NAMES.length);
-    String fileNamename = DEFAULT_FILE_NAMES[randomIndex];
+    String fileName = DEFAULT_FILE_NAMES[randomIndex];
 
-    if (fileNamename == null) {
+    if (fileName == null) {
       while (counter > 0) {
         randomIndex = new Random().nextInt(DEFAULT_FILE_NAMES.length);
         if (DEFAULT_FILE_NAMES[randomIndex] != null) {
-          fileNamename = DEFAULT_FILE_NAMES[randomIndex];
+          fileName = DEFAULT_FILE_NAMES[randomIndex];
           DEFAULT_FILE_NAMES[randomIndex] = null;
           break;
         }
@@ -74,7 +74,7 @@ public final class FileGeneratorService {
     } else {
       DEFAULT_FILE_NAMES[randomIndex] = null;
     }
-    return fileNamename;
+    return fileName;
   }
 
   public static StringBuilder getFillingForTheFile() {
