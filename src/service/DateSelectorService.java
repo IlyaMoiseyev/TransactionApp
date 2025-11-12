@@ -19,11 +19,11 @@ public final class DateSelectorService {
       Scanner scanner = new Scanner(System.in);
       String dateFrom;
       String dateBy;
-      System.out.println("Пожалуйста введите даты периода:");
-      System.out.println("Формат ввода: yyyy-mm-dd");
-      System.out.println("С какой даты:");
+      System.out.println("Please enter the dates of the period:");
+      System.out.println("Input format: yyyy-mm-dd");
+      System.out.println("From what date:");
       dateFrom = scanner.nextLine();
-      System.out.println("По какую дату:");
+      System.out.println("On what date:");
       dateBy = scanner.nextLine();
       showHistoryByDate(dateFrom, dateBy);
     } catch (NoMatchingFilesException ex) {
@@ -35,8 +35,7 @@ public final class DateSelectorService {
     LocalDate startDate = LocalDate.parse(dateFrom);
     LocalDate endDate = LocalDate.parse(dateBy);
     StringBuilder historyOfOperations = new StringBuilder();
-    String path = "src\\report.txt";
-    File reportFile = new File(path);
+    File reportFile = new File(PathsStorageService.PATH_TO_REPORT_FILE);
     LocalDate dateInReport = null;
     Pattern pattern = Pattern.compile("^(\\d{4}-\\d{2}-\\d{2})");
     Matcher matcher;
@@ -68,7 +67,7 @@ public final class DateSelectorService {
   }
 
   public static void printOperation(LocalDate dateFrom, LocalDate dateBy, StringBuilder operationHistory) {
-    System.out.println("История операций с: " + dateFrom + " по: " + dateBy);
+    System.out.println("History of operations from: " + dateFrom + " by: " + dateBy);
     System.out.println(operationHistory);
   }
 }
