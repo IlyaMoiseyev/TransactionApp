@@ -10,7 +10,7 @@ import java.nio.file.StandardCopyOption;
 public record FileMovingService(File file) {
   public void writeFileIntoArchiveDirectory() {
     Path sourceFile = Paths.get(file.getPath());
-    Path targetDir = Paths.get("src\\archive\\");
+    Path targetDir = Paths.get(PathsStorageService.PATH_TO_ARCHIVE_DIRECTORY);
     Path targetFile = targetDir.resolve(sourceFile.getFileName());
 
     try {
