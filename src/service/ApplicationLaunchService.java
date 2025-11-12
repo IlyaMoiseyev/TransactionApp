@@ -12,7 +12,7 @@ public final class ApplicationLaunchService {
   public static void launchApplication() {
     FileGeneratorService.generateFiles(FileGeneratorService.getRandomNumberOfFiles());
     Scanner scanner = new Scanner(System.in);
-    System.out.println("Система выполнения транзакций запущена!");
+    System.out.println("Transaction execution system is running!");
     boolean isAlive = true;
 
     while (isAlive) {
@@ -29,10 +29,10 @@ public final class ApplicationLaunchService {
   }
 
   private static void printNavigationTroughAppFunctionality() {
-    System.out.println("Пожалуйста сделайте выбор:");
-    System.out.println("1 - запуск парсинга файлов.");
-    System.out.println("2 - вывод списка транзакций из файл-отчета.");
-    System.out.println("3 - вывод списка транзакций за определенный период.");
-    System.out.println("0 - выход из приложения.");
+    System.out.println("Please make your choice:");
+    System.out.println("1 - starting file parsing.");
+    System.out.println("2 - view a list of transactions from a report file.");
+    System.out.println("3 - view a list of transactions for a specific period.");
+    System.out.println("0 - exiting the app.");
   }
 }
