@@ -15,6 +15,9 @@ public class TransactionService {
   private final File file;
   private final StringBuilder textFromTheFile;
   private boolean isFind;
+  private final int debitingAccountGroupNumber = 1;
+  private final int creditingAccountGroupNumber = 2;
+  private final int transferAmountGroupNumber = 3;
 
   public TransactionService(File file) {
     this.file = file;
@@ -27,9 +30,9 @@ public class TransactionService {
 
     while (matcher.find()) {
       isFind = true;
-      Account debitingAccount = new Account(matcher.group(1));
-      Account creditingAccount = new Account(matcher.group(2));
-      double transferAmount = Double.parseDouble(matcher.group(3));
+      Account debitingAccount = new Account(matcher.group(debitingAccountGroupNumber));
+      Account creditingAccount = new Account(matcher.group(creditingAccountGroupNumber));
+      double transferAmount = Double.parseDouble(matcher.group(transferAmountGroupNumber));
       LocalDate date = LocalDate.now();
       LocalTime time = LocalTime.now();
       String possibleException = null;
