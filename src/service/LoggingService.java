@@ -33,7 +33,8 @@ public class LoggingService {
                                double transferAmount,
                                boolean operationSuccess,
                                String exception) {
-    try (BufferedWriter writer = new BufferedWriter(new FileWriter(PathsStorageService.PATH_TO_REPORT_FILE, true))) {
+    try (BufferedWriter writer = new BufferedWriter(
+            new FileWriter(PathsStorageService.PATH_TO_REPORT_FILE, true))) {
       String resultOperation = "fault!";
 
       if (operationSuccess) {
